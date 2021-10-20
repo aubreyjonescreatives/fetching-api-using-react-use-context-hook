@@ -2,13 +2,13 @@
 
 
 
-## Create a React Context and provide a Context Provider functional component.
+1. Create a React Context and provide a Context Provider functional component.
 
 
-## Provide a means for components to use the Context you created.
+2. Provide a means for components to use the Context you created.
 
 
-## Write a Netlify function that will retrieve your API data and provide it to your React component(s).
+3. Write a Netlify function that will retrieve your API data and provide it to your React component(s).
 
 
-## Your Context component has at least one side effect that is handled using the useEffect hook
+4. Your Context component has at least one side effect that is handled using the useEffect hook
