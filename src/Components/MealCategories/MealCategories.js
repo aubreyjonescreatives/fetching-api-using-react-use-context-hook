@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState } from 'react'; 
 import { useMealContext } from '../../contexts/MealContext'; 
 import MealCard from '../MealCard/MealCard';
 import Box from '@mui/material/Box';

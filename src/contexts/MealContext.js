@@ -13,7 +13,7 @@ mealList: [],
 
 
 export const MealContextProvider = (props) => {
-    const [meals, setMeals] = useState([])
+    const [meals] = useState([])
     const [mealList, setmealList] = useState([])
 
 

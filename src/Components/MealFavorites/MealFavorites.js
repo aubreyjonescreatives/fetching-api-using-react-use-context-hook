@@ -1,7 +1,7 @@
 import React, { useState } from 'react'; 
 // import theCategories from '../../data/meals.json'
-import MealCard from '../MealCard/MealCard'
-import Box from '@mui/material/Box';
+//import MealCard from '../MealCard/MealCard'
+//import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 
@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 const MealCategories = () => {
 
 
-const [favoriteMeal, setFavoriteMeal] = useState()
+const [favoriteMeal] = useState()
 
 
 // const mealCats = theCategories.categories
