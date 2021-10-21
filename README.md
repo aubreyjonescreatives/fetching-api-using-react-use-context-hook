@@ -59,7 +59,7 @@ const mealData = useMealContext()
 3. Write a Netlify function that will retrieve your API data and provide it to your React component(s).
 
 
-***I created a Netlify function that retrieves my API data. This is sample code that connects my React component to that Netlify function: 
+***I created a Netlify function that retrieves my API data to avoid adding a server to a React front-end project. This is sample code that connects my React component to that Netlify function: 
 
 ```
 

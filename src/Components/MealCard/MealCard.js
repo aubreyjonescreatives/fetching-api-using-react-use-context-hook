@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import subImage from './subimage.png'
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -55,6 +55,11 @@ const [expanded, setExpanded] = React.useState(false);
   }
 
 
+  const handleImageLoadError = (e) => {
+    console.log(e.target.src)
+    e.target.onerror = null
+    e.target.src = subImage
+  }
 
 
 
@@ -72,6 +77,7 @@ return (
         height="194"
         image={`${props.category.strCategoryThumb}`}
         alt={props.category.strCategory}
+        onError={handleImageLoadError}
       />
       <CardContent>
       </CardContent>
