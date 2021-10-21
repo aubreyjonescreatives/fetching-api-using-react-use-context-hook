@@ -33,6 +33,29 @@ export default App;
 2. Provide a means for components to use the Context you created.
 
 
+***In my MealCategories.js component, I access the useContext hook and store it in a const. I then map through the mealData constant in my return statement. 
+
+
+```
+
+const mealData = useMealContext()
+
+
+ 
+{mealData.mealList.map((category) => {
+    return (
+
+      // more code here in file
+    )
+
+}
+
+
+```
+
+
+
+
 3. Write a Netlify function that will retrieve your API data and provide it to your React component(s).
 
 
