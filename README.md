@@ -4,6 +4,31 @@
 
 1. Create a React Context and provide a Context Provider functional component.
 
+*** I store my fetch API data in a React context hook in my MealContextProvider file. I then wrap it around my app.js routes.
+
+```
+const App = () => {
+  return (
+   <>
+   <Router>
+    <MealContextProvider>
+     <NavBar />
+  <Route path="/" exact component={MealCategories} />
+  <Route path="/MealFavorites" exact component={MealFavorites} />
+   <Footer />
+   </MealContextProvider>
+   </Router>
+   </>
+  );
+}
+
+export default App;
+
+
+
+
+```
+
 
 2. Provide a means for components to use the Context you created.
 
