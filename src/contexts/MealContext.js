@@ -20,11 +20,12 @@ export const MealContextProvider = (props) => {
 
 
     const fetchCategories = async () => {
-   
+        const mealsURL = `/.netlify/functions/mealData`
         try {
-        const response = await axios.get('/cat')
-        console.log(response.data.categories)
-        setmealList(response.data.categories)
+        const response = await axios.get(mealsURL)
+        const mealCats = await response.data.categories
+       // console.log(response.data.categories)
+       setmealList(mealCats)
        
         } catch (err) {
             console.log(err)

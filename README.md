@@ -59,4 +59,37 @@ const mealData = useMealContext()
 3. Write a Netlify function that will retrieve your API data and provide it to your React component(s).
 
 
+***I created a Netlify function that retrieves my API data. This is sample code that connects my React component to that Netlify function: 
+
+```
+
+    const fetchCategories = async () => {
+        const mealsURL = `/.netlify/functions/mealData`
+        try {
+        const response = await axios.get(mealsURL)
+        const mealCats = await response.data.categories
+       // console.log(response.data.categories)
+       setmealList(mealCats)
+       
+        } catch (err) {
+            console.log(err)
+        }
+    }
+    
+        useEffect(() => {
+            fetchCategories()
+        
+    }, [])
+
+
+
+
+
+
+```
+
+
+
+
+
 4. Your Context component has at least one side effect that is handled using the useEffect hook
